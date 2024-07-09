@@ -1,0 +1,8 @@
+.wrap-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.wrap-list li {
+    margin-bottom: 20px; /* Add space between rows */
+}

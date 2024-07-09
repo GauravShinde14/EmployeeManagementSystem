@@ -1,0 +1,24 @@
+<h1 class="text-center">Update Employee</h1>
+
+<div class="container">
+  
+<form (ngSubmit)="submitdata()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control"  name="name" [(ngModel)]="emp.name">
+      
+    </div>
+    <div class="mb-3">
+        <label for="dept" class="form-label">Department</label>
+        <input type="text" class="form-control"  name="dept"  [(ngModel)]="emp.dept">
+        
+      </div>
+      <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="text" class="form-control"  name="salary"  [(ngModel)]="emp.salary">
+        
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>

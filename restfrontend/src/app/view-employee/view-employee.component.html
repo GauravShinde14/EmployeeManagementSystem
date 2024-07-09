@@ -1,0 +1,50 @@
+<h1 class="text-center">All Employees</h1>
+
+<!-- <table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of emp">
+            <td>{{e.name}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.dept}}</td>
+            <td>
+                <button (click) = "updateEmployee(e.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteEmployee(e.id)" class="btn btn-danger" style="margin-left: 15px;">Delete</button>
+            </td>
+        </tr>
+    </tbody> -->
+<!-- <div *ngFor="let e of emp">
+
+
+
+
+    </div> -->
+
+
+<div style="margin-top: 40px;">
+
+
+    <ul  class="list-group list-group-horizontal list-group-numbered wrap-list ">
+        <li *ngFor="let e of emp" style="margin-left: 20px;">
+            <div class="card" style="width: 22rem; ">
+                <div class="card-body">
+                  <h5 class="card-title">Name: {{e.name}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Salary: {{e.salary}}</h6>
+
+                  <h6 class="card-subtitle mb-2 text-muted">Department: {{e.dept}}</h6>
+                  
+                  <button (click) = "updateEmployee(e.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteEmployee(e.id)" class="btn btn-danger" style="margin-left: 15px;">Delete</button>
+                </div>
+              </div>
+        </li>
+    </ul>
+</div>
+<!-- </table> -->
